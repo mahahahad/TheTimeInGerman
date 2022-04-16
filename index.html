@@ -1,41 +1,40 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en" dir="ltr">
 
   <head>
-    <meta charset = "UTF-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The Time In German</title>
-    <link rel="stylesheet" href="./dist/CSS/main.css" />
-    <link rel="shortcut icon" href="favicon.png" />
-    <meta name="name" content="The Time in German" />
-    <meta name="description" content="Convert any time from numbers to the complicated german time" />
+    <link rel="stylesheet" href="./dist/CSS/main.css">
+    <link rel="shortcut icon" href="favicon.png">
+    <meta name="name" content="The Time in German">
+    <meta name="description" content="Convert any time from numbers to the complicated german time">
   </head>
 
   <body>
-    <div class='content'>
+    <div class="content">
       <div class="german-time-container">
-        <h2 class='overline'>Es ist</h2>
-        <h1 id='germanTime'> </h1> 
+        <h2 class="overline" lang="de">Es ist</h2>
+        <h1 id="germanTime" lang="de">&nbsp;</h1>
       </div>
-      
+
       <div class="english-time">
-      <div class="english-time__inputs">
-        <div class='input-container'>
-          <label class="input-label" for='hours'>Hours</label>
-          <input type='number' class='input' id='hours' placeholder='02' min="1" max="23" />
-          <h2 class='error-message'></h2>
+        <div class="english-time__inputs">
+          <div class="input-container">
+            <label class="input-label" for="hours">Hours</label>
+            <input type="number" class="input" id="hours" placeholder="02" min="1" max="23" />
+          </div>
+          <h2 class="seperator">:</h2>
+          <div class="input-container">
+            <label class="input-label" for="minutes">Minutes</label>
+            <input type="number" class="input" id="minutes" placeholder="30" min="0" max="59" />
+          </div>
+          <button class="button" id="convertButton">Convert</button>
         </div>
-        <h2 class="seperator">:</h2>
-        <div class='input-container'>
-          <label class="input-label" for='minutes'>Minutes</label>
-          <input type='number' class='input' id='minutes' placeholder='30' min="0" max="59" />
-        <h2 class='error-message'></h2>  
-        </div>
-        <button class='button' id='convertButton'>Convert</button>
       </div>
-      </div>
-      
+
     </div>
     <script src="./dist/JS/main.js"></script>
-  </body>   
+  </body>
+
 </html>
