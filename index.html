@@ -12,13 +12,30 @@
   </head>
 
   <body>
-    <h1>Es ist <span id='germanTime'> </span></h1> 
-    <div class='english-time'>
-      <input type='text' class='english-time__input' id='englishTime' placeholder='Ex. 5:15, 1:30, 2:20'/>
-      <button class='english-time__convert-button' id='convertButton'>Convert</button>
+    <div class='content'>
+      <div class="german-time-container">
+        <h2 class='overline'>Es ist</h2>
+        <h1 id='germanTime'> </h1> 
+      </div>
+      
+      <div class="english-time">
+      <div class="english-time__inputs">
+        <div class='input-container'>
+          <label class="input-label" for='hours'>Hours</label>
+          <input type='number' class='input' id='hours' placeholder='02' min="1" max="23" />
+          <h2 class='error-message'></h2>
+        </div>
+        <h2 class="seperator">:</h2>
+        <div class='input-container'>
+          <label class="input-label" for='minutes'>Minutes</label>
+          <input type='number' class='input' id='minutes' placeholder='30' min="0" max="59" />
+        <h2 class='error-message'></h2>  
+        </div>
+        <button class='button' id='convertButton'>Convert</button>
+      </div>
+      </div>
+      
     </div>
-    <script src="./dist/JS/index.js">
-    </script>
-  </body>
-
+    <script src="./dist/JS/main.js"></script>
+  </body>   
 </html>
